@@ -25,7 +25,7 @@ def task4(filename: str):
         return total
 
     except FileNotFoundError:
-        return "jopa"
+        return "error"
 
 
 if __name__ == "__main__":
