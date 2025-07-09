@@ -25,10 +25,10 @@ def task4(filename: str):
         return total
 
     except FileNotFoundError:
-        return "error"
+        print("Файл не найден")
 
 
 if __name__ == "__main__":
-    name = "nums.txt"
+    name = sys.argv[1]
     result = task4(name)
     print(result)
