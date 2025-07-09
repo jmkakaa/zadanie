@@ -1,6 +1,5 @@
 import json
 import sys
-from html.parser import incomplete
 
 
 def read_json(values: str):
