@@ -1,3 +1,4 @@
+import sys
 
 
 def main(n, m):
@@ -13,7 +14,7 @@ def main(n, m):
 
 if __name__ == "__main__":
     try:
-        n, m = map(int, input("введите n и m через прбед: ").split(" "))
+        n,m = map(int, sys.argv[1:3])
         result = main(n, m)
         print("".join(map(str, result)))
     except ValueError:
